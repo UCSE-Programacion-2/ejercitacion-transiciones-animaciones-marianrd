@@ -75,7 +75,9 @@ nav ul li a:hover::before{
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
-    transition: padding 0.25s ease;
+    transition: 
+        padding 0.25s ease,
+        background-color 0.25s;
 }
 
 .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
@@ -87,6 +89,7 @@ nav ul li a:hover::before{
 .social ul li a:hover{
     padding-right: 35px;
     padding-left: 25px;
+    background-color: #000;
 }
 
 
