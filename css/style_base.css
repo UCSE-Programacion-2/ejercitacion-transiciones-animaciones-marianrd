@@ -33,8 +33,6 @@ nav ul {
     display: flex; 
     justify-content: center;
     list-style: none;
-    /* padding: 0px;
-    margin-left: 10px;          NO son necesarias porque usamos flex*/
 }
 nav ul li {
     margin: 20px;
@@ -51,12 +49,13 @@ nav ul li a:before{
     content:'';
     background: var(--decoration-color);
     position:absolute;
-    bottom:-10px; 
-    /* alto y ancho=0 */
-    /* transition: ; */
+    bottom:-10px;
+    height: 3px;
+    width: 0;
+    transition: width 0.25s;
 }
 nav ul li a:hover::before{
-    /* ancho final */
+    width: 100%;
 }
 
 /* Barra redes */
